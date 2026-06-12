@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She Can Foundation | Empowering Women</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!--NAVBAR-->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-icon">♀</span>
+        <span class="logo-text">She Can Foundation</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="btn-dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="btn-nav-donate" onclick="scrollToDonate()">Donate</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!--HERO-->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="dot"></span> NGO Registered Under Indian Society Act, 1860
+      </div>
+      <h1 class="hero-title reveal">
+        Together<br />
+        <em>We Can</em><br />
+        Change The World
+      </h1>
+      <p class="hero-sub reveal">
+        Uplifting underprivileged women through education, training, and opportunities — one life at a time.
+      </p>
+      <div class="hero-cta reveal">
+        <button class="btn-primary" onclick="scrollToDonate()">Donate Now</button>
+        <a href="#about" class="btn-ghost">Our Story ↓</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap reveal">
+      <div class="hero-image-frame">
+        <img
+          src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=1045,fit=crop/Aq2NJ23MzBH2rx2j/1682903599444-m5KPBaLG4LiW4P7B.jpg"
+          alt="Women empowered by She Can Foundation"
+          class="hero-img"
+          onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80'"
+        />
+
+      </div>
+    </div>
+  </section>
+
+  <!--ABOUT-->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label reveal">About Us</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Global Vision,<br /><em>Local Action</em></h2>
+          <p>
+            She Can Foundation is a non-governmental organization registered under the Indian Society Act, 1860, dedicated to empowering women and creating a more equitable society.
+          </p>
+          <p>
+            We provide support, resources, and training to women in communities across the globe, working closely with local organizations, governments, and communities to ensure our programs are effective and sustainable.
+          </p>
+          <p>
+            Through advocacy campaigns and initiatives, we raise awareness of women's issues — because we believe that every woman deserves the opportunity to thrive, regardless of her background.
+          </p>
+          <a href="#programs" class="btn-outline">Explore Our Programs →</a>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-num" id="counter" data-target="5000">5000+</div>
+            <div class="stat-label">Women Supported</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">Programs Running</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">8</div>
+            <div class="stat-label">States Reached</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Volunteer Driven</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--PROGRAMS-->
+  <section class="programs" id="programs">
+    <div class="container">
+      <div class="section-label reveal">What We Do</div>
+      <h2 class="section-title centered reveal">Our Programs</h2>
+      <div class="programs-grid">
+        <div class="program-card reveal">
+          <div class="program-icon">📚</div>
+          <h3>Education</h3>
+          <p>Providing access to quality education and skill-building workshops that open doors to new opportunities.</p>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-icon">🏥</div>
+          <h3>Healthcare</h3>
+          <p>Increasing access to healthcare services and awareness campaigns for women in underserved communities.</p>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-icon">💼</div>
+          <h3>Economic Growth</h3>
+          <p>Equipping women with vocational training and entrepreneurship support for financial independence.</p>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-icon">🤝</div>
+          <h3>Community</h3>
+          <p>Building a strong support network where women empower each other and create lasting change together.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--IMPACT / QUOTE-->
+  <section class="impact" id="impact">
+    <div class="container">
+      <blockquote class="big-quote reveal">
+        <span class="quote-mark">"</span>
+        Together, we can break down barriers and empower women. If we all do our part, there is no challenge too great to overcome.
+        <span class="quote-mark">"</span>
+        <cite>— Reeta Mishra, Founder &amp; President</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!--DONATE-->
+  <section class="donate-cta" id="donate">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2>Join Us in Our Mission</h2>
+        <p>We don't ask for much — just help with what you can. Be it money, skill, or your time.</p>
+        <div class="cta-buttons">
+          <button class="btn-primary large" id="donateBtn">Donate Now</button>
+          <button class="btn-ghost-white" onclick="window.open('https://internshala.com/internships/internship-at-she-can-foundation/', '_blank')">Volunteer With Us</button>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">♀</span>
+            <span>She Can Foundation</span>
+          </div>
+          <p>Empowering women and transforming lives across India and beyond.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/_shecanfoundation_" target="_blank" aria-label="Instagram">📷 Instagram</a>
+            <a href="https://www.linkedin.com/company/shecanfoundation" target="_blank" aria-label="LinkedIn">💼 LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#donate">Donate</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>📧 president@shecanfoundation.org</p>
+          <p>📞 +91-8283841830</p>
+          <p>🏛 Registered under Indian Society Act, 1860</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 She Can Foundation. All rights reserved. | Made with ❤️ for a better world.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Donate Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-icon">💜</div>
+      <h3>Support She Can Foundation</h3>
+      <p>Your contribution helps empower underprivileged women across India.</p>
+      <div class="modal-amounts">
+        <button class="amount-btn" data-amount="500">₹500</button>
+        <button class="amount-btn" data-amount="1000">₹1,000</button>
+        <button class="amount-btn" data-amount="2500">₹2,500</button>
+        <button class="amount-btn" data-amount="5000">₹5,000</button>
+      </div>
+      <input type="number" class="amount-input" id="customAmount" placeholder="Enter custom amount (₹)" />
+      <button class="btn-primary large full-width" onclick="processDonate()">Proceed to Donate</button>
+      <p class="modal-note">You'll be redirected to She Can Foundation's official donation page.</p>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
